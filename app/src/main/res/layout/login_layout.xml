@@ -3,8 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
+    android:background="#87CEFA"
+    android:orientation="vertical"
     tools:context=".LoginActivity">
 
     <TextView
@@ -12,21 +13,22 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:text="Recycle"
-        android:textStyle="bold"
         android:textAlignment="center"
         android:textColor="#000"
-        android:textSize="40dp" />
+        android:textSize="40dp"
+        android:textStyle="bold" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/lixo2"
-        android:layout_gravity="center_horizontal"/>
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/lixo2" />
 
     <EditText
         android:id="@+id/edtusuario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:background="@drawable/borda"
         android:drawableEnd="@drawable/baseline_email"
         android:hint="Insira seu usuario"
@@ -47,5 +49,28 @@
         android:maxLength="100"
         android:minHeight="48dp"
         android:padding="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="300dp"
+        android:layout_marginBottom="50dp"
+        android:text="Esqueci a senha"
+        android:textColor="#000"
+        android:textSize="15dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnentrarLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Entrar" />
+    </LinearLayout>
 
 </LinearLayout>
