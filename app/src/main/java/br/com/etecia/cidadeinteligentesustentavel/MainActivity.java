@@ -20,6 +20,10 @@ public class MainActivity extends AppCompatActivity {
 
         listaLixo = new ArrayList<>();
 
+        listaLixo.add(
+                new DescLixo("Impacto ambiental", "Olá", "Impacto", R.drawable.natureza)
+        );
+
 
     }
 }

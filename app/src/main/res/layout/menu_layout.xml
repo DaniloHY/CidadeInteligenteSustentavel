@@ -27,6 +27,5 @@
             android:layout_height="wrap_content"
             android:text="Benefícios" />
 
-
     </com.google.android.material.tabs.TabLayout>
 </RelativeLayout>
