@@ -20,9 +20,6 @@ public class MainActivity extends AppCompatActivity {
 
         listaLixo = new ArrayList<>();
 
-        listaLixo.add(
-                new DescLixo("Causas Ambientais",
-                        "Desmatamento",
-                        R.sadasd.natureza));
+
     }
 }
