@@ -16,9 +16,4 @@
         android:layout_gravity="center_horizontal"
         android:textColor="#000"/>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/idListaLixo"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
 </LinearLayout>
