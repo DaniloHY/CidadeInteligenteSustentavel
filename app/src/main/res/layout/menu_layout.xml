@@ -19,6 +19,13 @@
             app:navigationIcon="@drawable/baseline_arrow_back_ios"
             app:title="Menu Principal" />
 
+        <com.google.android.material.navigation.NavigationView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/navigationView"
+            app:menu="@menu/navigation_drawer"
+            />
+
     </com.google.android.material.appbar.AppBarLayout>
 
 
