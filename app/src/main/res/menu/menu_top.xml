@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/mFavorite"
         android:contentDescription="Menu favorito"
@@ -17,5 +18,5 @@
         android:contentDescription="Menu more"
         android:icon="@drawable/baseline_menu"
         android:title="More"
-        app:showAsAction="never" />
+        app:showAsAction="ifRoom" />
 </menu>

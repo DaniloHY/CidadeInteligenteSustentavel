@@ -4,10 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MenuActivity">
+
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:id="@+id/idAppBar">
 
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/idToolBar"
@@ -15,15 +17,18 @@
             android:layout_height="?attr/actionBarSize"
             app:menu="@menu/menu_top"
             app:navigationIcon="@drawable/baseline_arrow_back_ios"
-            app:title="Lanches" />
+            app:title="Menu Principal" />
 
     </com.google.android.material.appbar.AppBarLayout>
+
 
     <com.google.android.material.tabs.TabLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:contentDescription="@string/lista_lx"
-        android:background="#ECD9D9">
+        android:background="#ECD9D9"
+        android:layout_below="@id/idAppBar"
+        tools:ignore="NotSibling">
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="match_parent"
@@ -41,6 +46,7 @@
             android:text="Benefícios" />
 
     </com.google.android.material.tabs.TabLayout>
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/idListaLixo"
