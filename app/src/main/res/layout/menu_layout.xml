@@ -7,6 +7,11 @@
     tools:context=".MenuActivity">
 
 
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/tab_layout"
+        android:id="@+id/idTabLayout"/>
     
     <androidx.drawerlayout.widget.DrawerLayout
         android:layout_width="match_parent"
@@ -16,40 +21,13 @@
         tools:openDrawer="end">
 
         <com.google.android.material.navigation.NavigationView
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:id="@+id/navigationView"
+            app:headerLayout="@layout/tab_layout"
             app:menu="@menu/navigation_drawer"
             />
     </androidx.drawerlayout.widget.DrawerLayout>
-
-    
-
-
-    <com.google.android.material.tabs.TabLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:contentDescription="@string/lista_lx"
-        android:background="#ECD9D9"
-        android:layout_below="@id/idAppBar"
-        tools:ignore="NotSibling">
-
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Organização" />
-
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Impacto" />
-
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Benefícios" />
-
-    </com.google.android.material.tabs.TabLayout>
 
 
     <androidx.recyclerview.widget.RecyclerView
