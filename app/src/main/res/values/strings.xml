@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">CidadeInteligenteSustentavel</string>
     <string name="lista_lx">lista_lx</string>
+    <string name="closenav" />
+    <string name="opennav" />
 </resources>

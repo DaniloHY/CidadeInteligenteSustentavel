@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:id="@+id/idDrawerLayout"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     tools:openDrawer="end"
@@ -18,6 +19,7 @@
             android:layout_height="match_parent"
             layout="@layout/tab_layout"
             android:id="@+id/idTabLayout"/>
+
 
         <FrameLayout
             android:id="@+id/idContainerNav"
@@ -35,14 +37,15 @@
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:id="@+id/navigationView"
-            app:headerLayout="@menu/navigation_drawer"
+            android:layout_gravity="end"
+            app:headerLayout="@layout/head_nav"
             app:menu="@menu/navigation_drawer"
             />
 
-
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/idListaLixo"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:id="@+id/idListaLixo"/>
+
 
 </androidx.drawerlayout.widget.DrawerLayout>

@@ -1,20 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <group
-        android:id="@+id/group1"
-        android:checkableBehavior="single">
-        <item
-            android:id="@+id/item1"
-            android:icon="@drawable/baseline_favorite"
-            android:title="oi"
-            android:checked="true" />
-        <item
-            android:id="@+id/item2"
-            android:icon="@drawable/baseline_favorite"
-            android:title="oi" />
-        <item
-            android:id="@+id/item3"
-            android:icon="@drawable/baseline_favorite"
-            android:title="oi" />
+    <group>
+        <item android:title="Home">
+            <menu>
+                <item
+                    android:id="@+id/mImport"
+                    android:checked="true"
+                    android:icon="@drawable/baseline_email"
+                    android:title="Import" />
+                <item
+                    android:id="@+id/mGallery"
+                    android:icon="@drawable/baseline_email"
+                    android:title="Gallery" />
+                <item
+                    android:id="@+id/mSlideShow"
+                    android:icon="@drawable/baseline_email"
+                    android:title="SlideShow" />
+                <item
+                    android:id="@+id/mSettings"
+                    android:icon="@drawable/baseline_email"
+                    android:title="Settings" />
+            </menu>
+        </item>
+    </group>
+    <group>
+        <item android:title="Communicate">
+            <menu>
+                <item
+                    android:id="@+id/mShare"
+                    android:icon="@drawable/baseline_email"
+                    android:title="Share" />
+                <item
+                    android:id="@+id/mSend"
+                    android:icon="@drawable/baseline_email"
+                    android:title="Send" />
+            </menu>
+        </item>
     </group>
 </menu>
